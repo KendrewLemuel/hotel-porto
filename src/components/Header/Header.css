@@ -1,0 +1,46 @@
+.Head-wrapper {
+  background: var(--black);
+  color: #fff;
+}
+
+.Head-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.Head-menu {
+  gap: 2rem;
+}
+
+.Head-menu > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.menu-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .Head-menu {
+    color: var(--black);
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    background: #fff;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    align-items: flex-start;
+    box-shadow: var(--shadow);
+    transition: all 300ms ease-in;
+    z-index: 99;
+  }
+}

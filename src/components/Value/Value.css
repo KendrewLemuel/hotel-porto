@@ -1,0 +1,51 @@
+.Value-container,
+Image-container {
+  border: 8px solid rgb(232 232 232 /9%);
+}
+.Value-container > div {
+  flex: 1;
+}
+
+.Value-Right {
+  gap: 0.5rem;
+}
+
+.Accordion {
+  margin-top: 2rem;
+  border: none;
+}
+.AccordionItem {
+  background: #fff;
+  border: 0.8px solid rgba(128, 128, 1288, 0.143);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+}
+.AccordionButton {
+  background: #fff;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.icon {
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+}
+.icon svg {
+  fill: var(--blue);
+}
+.AccordionButton .primaryText {
+  font-size: 1.1rem;
+}
+@media (max-width: 1024px) {
+  .Value-container {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    .AccordionButton .primaryText {
+      font-size: 0.8rem;
+    }
+  }
+}
